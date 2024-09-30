@@ -8,18 +8,19 @@ To write a program to predict the profit of a city using the linear regression m
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. Data Preparation:
+step 1. start
+step 2. Data Preparation:
     * Read the dataset from a CSV file using pandas.
     * Separate the features (X) and the target variable (y) from the dataset.
     * Convert these into NumPy arrays and scale them using StandardScaler to ensure all features have a mean of 0 and a standard deviation of 1, which helps in the convergence of gradient descent.
 
-2. Feature Engineering:
+step 3. Feature Engineering:
     * Add an intercept term (a column of ones) to the feature matrix X. This is necessary for the bias (intercept) in the linear regression model.
 
-3. Initialization:
+step 4. Initialization:
     * Initialize the weights (theta) to zeros. The number of weights is equal to the number of features plus one (for the intercept).
 
-4. Gradient Descent:
+step 5. Gradient Descent:
     * Iterate a specified number of times (num_iters).
 
     *  In each iteration:
@@ -35,7 +36,7 @@ To write a program to predict the profit of a city using the linear regression m
         * α is the learning rate.
         * m is the number of training examples.
 
-5. Prediction:
+step 6. Prediction:
     * To predict the target value for new data, scale the new data using the same scaler.
     * Use the learned weights (theta) to make predictions on the scaled new data.
 
